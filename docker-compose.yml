@@ -39,6 +39,7 @@ services:
 #
   ipower-pma:
     image: phpmyadmin/phpmyadmin:latest
+    container_name: ipower-pma
     ports:
       - "8081:80"
     depends_on:
