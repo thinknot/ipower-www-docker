@@ -19,6 +19,7 @@ services:
     volumes:
       - ./wordpress:/code
       - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+      - ./php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
     env_file: .env
     environment:
       XDEBUG_CONFIG: remote_host=host.docker.internal    
